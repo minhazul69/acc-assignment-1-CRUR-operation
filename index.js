@@ -20,7 +20,6 @@ app.get("/user/random", (req, res) => {
 });
 app.post("/user/save", (req, res) => {
   const user = req.body;
-  console.log(user);
   const updateUser = {
     _id: uuidv4(),
     ...user,
